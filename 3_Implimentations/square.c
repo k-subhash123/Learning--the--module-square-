@@ -15,6 +15,6 @@ int main()
      printf("plz enter your number\n");
      scanf("%d",&n);
      s=n*n;
-     printf("%d",s);
+     printf("square=%d",s);
      return 0;
 }
