@@ -23,3 +23,6 @@ staticcheck:
 	cppcheck --enable=all -iunity .
 dynamiccheck:Build
 	valgrind ./$(call FixPath,$(PROJ_NAME).$(EXEC))
+coverage:
+	gcc -fprofile-arcs -ftest-coverage $(SRC) $(INC) -o $(call FixPath,$(PROJ_NAME).$(EXEC)) -lm
+	gcov -a ./$(call FixPath,$(PROJ_NAME).$(EXEC))

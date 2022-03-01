@@ -1,0 +1,25 @@
+        -:    0:Source:square.c
+        -:    0:Graph:./square.gcno
+        -:    0:Data:-
+        -:    0:Runs:0
+        -:    1:/**
+        -:    2: * @file square.c
+        -:    3: * @author your name (you@domain.com)
+        -:    4: * @brief code for square of a number
+        -:    5: * @version 0.1
+        -:    6: * @date 2022-02-15
+        -:    7: * 
+        -:    8: * @copyright Copyright (c) 2022
+        -:    9: * 
+        -:   10: */
+        -:   11:#include "stdio.h"
+    #####:   12:int main()
+        -:   13:{
+        -:   14:     int n,s;
+    #####:   15:     printf("plz enter your number\n");
+    %%%%%:   15-block  0
+    #####:   16:     n=3;
+    #####:   17:     s=n*n;
+    #####:   18:     printf("square=%d",s);
+    #####:   19:     return 0;
+        -:   20:}
