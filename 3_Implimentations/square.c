@@ -13,7 +13,7 @@ int main()
 {
      int n,s;
      printf("plz enter your number\n");
-     scanf("%d",&n);
+     n=3;
      s=n*n;
      printf("square=%d",s);
      return 0;
