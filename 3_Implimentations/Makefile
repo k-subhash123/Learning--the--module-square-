@@ -17,3 +17,9 @@ Build:
 	gcc $(SRC) -o $(call FixPath,$(PROJ_NAME).$(EXEC)) -lm
 run:
 	./$(call FixPath,$(PROJ_NAME).$(EXEC))
+
+
+staticcheck:
+	cppcheck --enable=all -iunity .
+dynamiccheck:Build
+	valgrind ./$(call FixPath,$(PROJ_NAME).$(EXEC))
